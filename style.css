@@ -1,0 +1,23 @@
+/* Honeymood public pages: no external font, image or script (nothing sent to a third party). */
+:root { --fond: #FFF6E0; --carte: #FFFDF6; --texte: #3B2A1A; --discret: #6B5640; --accent: #9A5B13; --ambre: #E3A008; --trait: #EAD9B5; }
+@media (prefers-color-scheme: dark) {
+  :root { --fond: #1E160E; --carte: #2A1F14; --texte: #F3E6CF; --discret: #C9B79A; --accent: #E8B04A; --ambre: #E8B04A; --trait: #4A3A26; color-scheme: dark; }
+}
+* { box-sizing: border-box; }
+body { margin: 0; background: var(--fond); color: var(--texte); font: 17px/1.6 -apple-system, "Helvetica Neue", Arial, sans-serif; }
+main { max-width: 42rem; margin: 0 auto; padding: 2.5rem 1rem 4rem; }
+h1, h2 { font-family: "New York", Georgia, "Times New Roman", serif; color: var(--accent); line-height: 1.2; }
+h1 { font-size: 2rem; margin: 0 0 .25rem; }
+h2 { font-size: 1.3rem; margin: 2.2rem 0 .5rem; }
+p, li { max-width: 65ch; }
+ul { padding-left: 1.2rem; }
+li { margin: .3rem 0; }
+a { color: var(--accent); }
+.maj { color: var(--discret); margin: 0 0 1.5rem; }
+.resume { border-left: 4px solid var(--ambre); padding: .6rem 1rem; background: var(--carte); border-radius: 0 8px 8px 0; }
+.alveole { font-size: 2.5rem; color: var(--ambre); margin: 0; line-height: 1; }
+nav { display: flex; flex-wrap: wrap; gap: .75rem; margin: 1.5rem 0; }
+nav a { display: inline-block; padding: .6rem 1rem; border-radius: 999px; background: var(--carte); border: 1px solid var(--trait); text-decoration: none; font-weight: 600; }
+dt { font-weight: 600; margin-top: 1.2rem; }
+dd { margin: .3rem 0 0; }
+footer { margin-top: 3rem; padding-top: 1rem; border-top: 1px solid var(--trait); color: var(--discret); font-size: .9rem; }
